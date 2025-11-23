@@ -13,14 +13,14 @@ const server = http.createServer((req ,res) => {
                 }
                 body {
                     display: flex;
-                    justify-content: center; /* horizontal center */
-                    align-items: flex-start; /* top of page */
-                    background-color: #f0f0f0;
+                    justify-content: center;
+                    align-items: flex-start;
+                    background: linear-gradient(to bottom, #a8edea, #fed6e3);
                     text-align: center;
-                    padding-top: 50px; /* space from top */
+                    padding-top: 50px;
                 }
                 h1 {
-                    font-size: 50px;
+                    font-size: 24px;
                     color: #333;
                     margin: 10px 0;
                 }
@@ -30,9 +30,8 @@ const server = http.createServer((req ,res) => {
                     margin: 5px 0;
                 }
                 .verse {
-                    font-size: 20px;
+                    font-size: 24px;
                     color: #007700;
-                    font-style: italic;
                     margin-top: 20px;
                 }
             </style>
@@ -47,9 +46,6 @@ const server = http.createServer((req ,res) => {
         </body>
         </html>
  `);
-    res.write("John Ray L. De Leon\n");
-    res.write("BSIT BA - 4101\n");
-    res.write("Matthew 6:33")
     res.end();
 });
 server.listen(PORT, () => {
