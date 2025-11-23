@@ -13,25 +13,30 @@ const server = http.createServer((req ,res) => {
                 }
                 body {
                     display: flex;
-                    justify-content: center;
-                    align-items: flex-start;
-                    background: linear-gradient(to bottom, #a8edea, #fed6e3);
+                    justify-content: center; /* horizontal center */
+                    align-items: flex-start; /* top of page */
+                    background: linear-gradient(to top
+                      , #e0ebeb, #a3c2c2);
                     text-align: center;
-                    padding-top: 50px;
+                    padding-top: 50px; /* space from top */
                 }
                 h1 {
-                    font-size: 24px;
-                    color: #333;
+                    font-size: 30px;
+                    color: #283e3e;
                     margin: 10px 0;
                 }
                 p {
                     font-size: 24px;
-                    color: #555;
+                    color: #283e3e;
                     margin: 5px 0;
                 }
+               .verseTitle {
+                margin-top: 30px;
+              }
                 .verse {
-                    font-size: 24px;
-                    color: #007700;
+                    font-size: 20px;
+                    color: #283e3e;
+                    font-style: italic;
                     margin-top: 20px;
                 }
             </style>
@@ -40,7 +45,7 @@ const server = http.createServer((req ,res) => {
             <div>
                 <h1>John Ray L. De Leon</h1>
                 <p>BSIT BA - 4101</p>
-                <p>- Matthew 6:33</p>
+                <p class= "verseTitle">- Matthew 6:33</p>
                 <p class="verse">"But seek first the kingdom of God and His righteousness, and all these things shall be added to you."</p>
             </div>
         </body>
